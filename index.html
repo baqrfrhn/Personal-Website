@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baqer Farhan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="blinktext();">
+    <div class="main">
+        <!--nav bar-->
+        <div id="home">
+            <nav class="nav">
+                <img src="images/puck.png" alt="puck logo">
+                <ul>
+                    <li><a href="#home"> HOME </a></li>
+                    <li><a href="#about-me"> ABOUT </a></li>
+                    <li><a href="#my-education"> EDUCATION </a></li>
+                    <li><a href="#my-projects"> PROJECTS </a></li>
+                    <li><a href="#contact-me"> CONTACT </a></li>
+                </ul>
+                <img src="images/moon.png" id="icon1"/>
+            </nav>
+        </div>
+         <div id="navbar"> 
+             <img src="images/puck.png" alt="puck logo">
+             <ul>
+                  <li><a href="#home"> HOME </a></li>
+                  <li><a href="#about-me"> ABOUT </a></li>
+                  <li><a href="#my-education"> EDUCATION </a></li>
+                  <li><a href="#my-projects"> PROJECTS </a></li>
+                  <li><a href="#contact-me"> CONTACT </a></li>
+              </ul>
+              <img src="images/moon.png" id="icon2"/>
+         </div>
+         <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            }
+         </script>
+
+         <!--home section-->
+         <div id="home">
+            <section class="home-section">
+                 
+                 <div class="intro">
+                     <div class="main-text">
+                         <div class="text">
+                             <h1><span color="red">Baqer</span><br>Farhan</h1>
+                             <p>I like to code</p>
+                             <br><br><a href="resume/Resume for Baqer Farhan.pdf">CV</a>
+                         </div>
+                         <img src="images/output-onlinepngtools.png" alt="Guts From Berserk" id="guts"/>
+                     </div>
+                 </div>
+                 <div class="arrow">
+                     <a href="#about-me"><span></span></a>
+                 </div>
+            </section>
+         </div>
+         <script>
+            var icon1 = document.getElementById("icon1")
+            var icon2 = document.getElementById("icon2")
+            icon1.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon1.src = "images/sun.png";
+                    icon2.src = "images/sun.png";
+                    guts.src = "images/pngwing.com.png";
+                } else{
+                    icon1.src = "images/moon.png";
+                    icon2.src = "images/moon.png";  
+                    guts.src = "images/output-onlinepngtools.png";
+                }
+            }
+            icon2.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon1.src = "images/sun.png";
+                    icon2.src = "images/sun.png";
+                    guts.src = "images/pngwing.com.png";
+                } else{
+                    icon1.src = "images/moon.png";
+                    icon2.src = "images/moon.png";  
+                    guts.src = "images/output-onlinepngtools.png";
+                }
+            }
+         </script>
+
+         <!--about me section-->
+        <div id="about-me">
+         <section class="about-section">
+             <div class="about">
+                  <h1>ABOUT</h1>
+                  <div class="about-flex">
+                     <p>
+                         <span class="purple">import</span>
+                         <span class="red">baqer.io</span>  
+                         <br>
+                         <br>
+                         <span class="purple">public</span> 
+                         <span class="blue">class</span>
+                         <span class="red">Baqer</span> 
+                         <span class="white">{</span>
+                         <br>
+                         <span class="first-indent" style="color: rgb(124, 67, 124)">public</span>
+                            <span class="purple">static</span> 
+                            <span class="blue">int</span> 
+                            <span class="yellow">Baqer</span> 
+                            <span class="white">(){</span> 
+                            <br>
+                            <span class="second-indent" style="color: #1b648b">String</span>
+                                <span class="white">name = </span> 
+                                <span class="yellow">"Mohammed Baqer Farhan"</span> 
+                                <span class="white">;</span> 
+                                <br>
+                                <span class="second-indent" style="color: #1b648b">String</span>
+                                <span class="white">hometown = </span>  
+                                <span class="yellow">"Scarborough, Toronto, Ontario"</span> 
+                                <span class="white">;</span>
+                                <br> 
+                                <span class="second-indent" style="color: #1b648b">String</span>
+                                <span class="white">school = </span> 
+                                <span class="yellow">"University of Toronto"</span> 
+                                <span class="white">;</span>
+                                <br> 
+                                <span class="second-indent" style="color: #1b648b">int</span> 
+                                <span class="white">graduation = </span> 
+                                <span class="yellow">2027</span> 
+                                <span class="white">;</span> 
+                                <br>
+                                <span class="second-indent" style="color: #1b648b">String[][]</span> 
+                                <span class="white">hobbies = {</span> 
+                                <br>
+                                <span class="third-indent" style="color: #acacac" >{</span> 
+                                <span class="yellow">Photography</span>
+                                <span class="white">}</span>    
+                                <br>
+                                <span class="third-indent"style="color: #acacac">{</span> 
+                                <span class="yellow">Exercising</span>
+                                <span class="white">}</span>
+                                <br>
+                                <span class="third-indent"style="color: #acacac">{</span>
+                                <span class="yellow">Cooking and Baking</span>
+                                <span class="white">}</span> 
+                                <br>
+                                <span class="third-indent"style="color: #acacac">{</span> 
+                                <span class="yellow">Gardening</span>
+                                <span class="white">}</span> 
+                                <br>
+                                <span class="third-indent"style="color: #acacac">{</span> 
+                                <span class="yellow">Playing the Bass</span>
+                                <span class="white">}</span>
+                            <br>
+                            <span class="second-indent"style="color: #acacac">}</span> 
+                            <br>
+                            <span class="first-indent"style="color: #acacac">}</span>
+                            <br>
+                            <span class="first-indent" style="color:rgb(124, 67, 124);">static</span>
+                            <span class="blue">void</span>
+                            <span class="yellow">links</span>
+                            <span class="white">(</span>
+                            <span class="green">Baqer</span>
+                            <span class="white">){</span>
+                            <br>
+                                <span class="second-indent" style="color: #1b648b">String</span>
+                                <span class="white"> email = </span>
+                                <span class="yellow">"baqerfarhan33@gmail.com"</span>
+                                <span class="white">;</span>
+                                <br>
+                                <span class="second-indent" style="color: #1b648b">String</span>
+                                <span class="white"> linkedIn = </span>
+                                <span class="yellow">"</span>
+                                <a href="https://www.linkedin.com/in/baqer-farhan-1a3a89229/" class="linkedIn" style="color: rgb(168, 168, 100);">baqer-farhan</a>
+                                <span class="yellow">"</span>
+                                <span class="white">;</span>
+                                <br>
+                                <span class="second-indent" style="color: #1b648b">String</span>
+                                <span class="white"> gitHub = </span>
+                                <span class="yellow">"</span>
+                                <a href="https://github.com/baqrfrhn" class="gitHub" style="color: rgb(168, 168, 100);">Baqer-Farhan</a>
+                                <span class="yellow">"</span>
+                                <span class="white">;</span>
+                                <br>
+                                <span class="first-indent" style="color: #acacac;">}</span>
+                                <br>
+                                <span class="white">}</span>
+                        </p>
+
+                     <div class="terminal">
+                         <div class="compiled">
+                             <h1>Terminal</h1>
+                             <br>
+                             <p>
+                                 Eclipse Compiler for Java(TM) v20150120-1634, 3.10.2
+                                 Copyright IBM Corp 2000, 2013. All rights reserved.
+                                 <br><br>
+                                 Hey there! I'm Mohammed Baqer Farhan, and I'm diving headfirst into the world of Mathematics at the University of Toronto.
+                                 But that's not all there is to me. When I'm not buried in books, I'm often capturing life's little moments with my trusty camera. 
+                                 Nature's beauty, candid smiles - they all make it into my photo collection. I'm also all about staying active - you'll find me at the gym or jogging outside,
+                                 keeping both my body and mind in shape. Cooking and baking are my go-to creative outlets. There's something magical about mixing ingredients and creating mouthwatering dishes.
+                                 And speaking of magic, I'm a bit of a music enthusiast too. I groove to the rhythms of my bass guitar, letting the melodies take me away.
+                                 When I'm not making music, I'm making code. Coding is like solving puzzles that come to life, and I find it utterly fascinating. 
+                                 Looking forward, I'm on a mission to merge my love for math and coding, dreaming of becoming a software engineer.
+                                 One thing you'll learn about me is that I put my heart into everything I do. From equations to recipes to lines of code - I'm all in.
+                                 <br><br>
+                                 <script>
+                                     function blinktext() {
+                                        var effect = document.getElementById('blink');
+                                        setInterval(function() { effect.style.visibility = (effect.style.visibility == 'hidden' ? '' : 'hidden');}, 500);}
+                                </script>
+                                 <p id="blink">></p>
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+        </div>
+
+        <!--education-section-->
+        <div id="my-education">
+            <section class="education-section">
+                    <h1>EDUCATION</h1>
+                    <div class="education">
+                        <!--University-->
+                        <div class="uni">
+                            <img src="images/U-of-T-coat.png" alt="Uoft Coat of Arms" class="uoftcoat"/>
+                            <p class="main-edu-uni textgrad">
+                                University of Toronto<br>Scarborough<br>
+                                <span>Student in first year<br> Projected Graduation: June 2027</span>
+                            </p>
+                        </div>
+                        <div class="courses">
+                                <div>
+                                    <h2>Relevant Courses:</h2>    
+                                    <ul>
+                                        <span class="firstyr textgradinv">First Year:</span>
+                                        <li>CSCA08H3 Introduction to Computer Science I</li>
+                                        <li>CSCA67H3 Discrete Mathematics</li>
+                                        <li>FSTA01H3 Foods That Changed the World</li>
+                                        <li>LINA01H3 Introduction to Linguistics</li>
+                                        <li>MATA31H3 Calculus I for Mathematical Sciences</li>
+                                        <li>CSCA48H3 Introduction to Computer Science II</li>
+                                        <li>LINA02H3 Applications of Linguistics</li>
+                                        <li>MATA22H3 Linear Algebra I for Mathematical Sciences</li>
+                                        <li>MATA37H3 Calculus II for Mathematical Sciences</li>
+                                        <li>PHLA10H3 Reason and Truth</li>
+                                    </ul>
+                                </div>
+                            </div>
+            </section>
+        </div>
+            <!--projects section-->
+        <div id="my-projects">
+            <section class="projects-section">
+                 <h1>PROJECTS</h1>
+                 <div class="projects">
+                    <div class="container">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="images/code icon.png">
+                                    <h3>Personal Website</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>In case you couldn't tell, you're looking at my personal website right now!
+                                        This website was made entirely with HTML, CSS, and a bit of JavaScript.
+                                    </p>
+                                        <a href="https://github.com/baqrfrhn/Personal-Website">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="images/enigma machine.png">
+                                    <h3>Enigma Machine</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>
+                                        Created program using Java that encrypts and decrypts
+                                        messages in a similar fashion as the Enigma Machine (commonly 
+                                        used encryption device for the German army during WWII). 
+                                        <br>
+                                    </p>
+                                        <a href="https://github.com/baqrfrhn/Enigma-Cipher">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="">
+                                    <h3>Undertermined</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p></p>
+                                        <a href="#">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+         </div>
+
+         <div id="contact-me">
+            <section class="contact-section">
+                <div class="contacts">
+                     <div class="my-contacts">
+                         <a href="https://www.linkedin.com/in/baqer-farhan-1a3a89229/">LinkedIn</a>
+                         <span>|</span>
+                         <a href="https://github.com/baqrfrhn">GitHub</a>
+                         <span>|</span>
+                         <a href="">Email</a>
+                     </div>
+                     <h2>© Coded by Baqer Farhan</h2>
+                </div>
+            </section>
+         </div>
+    </div>
+</body>
+</html>
