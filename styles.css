@@ -470,7 +470,7 @@ nav ul{
     height: auto;
 }
 .textgrad{
-    background-image: linear-gradient(to left, #2e9fb8, #2063c6, #001892, #2e9fb8);
+    background-image: linear-gradient(to left, #2e9fb8, #2063c6, #586cd0, #2e9fb8);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -482,7 +482,7 @@ nav ul{
     background-position: -100%;
 }
 .textgradinv{
-    background-image: linear-gradient(to left, #2e9fb8, #0165fb, #001892, #2e9fb8);
+    background-image: linear-gradient(to left, #2e9fb8, #0165fb, #2e46a4, #2e9fb8);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
