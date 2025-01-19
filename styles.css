@@ -26,6 +26,10 @@ html{
     width:100%;
 }
 
+#icon{
+    border-radius: 10%;
+}
+
 :root{
     --primary-color: #ffffff;
     --secondary-color: #2a2d34;
@@ -39,8 +43,9 @@ html{
 
     --text: black;
     --swap-text: white;
-    --home-pad: 9%;
-    --img-size: 360px;
+    --home-pad: 10%;
+    --img-size: 500px;
+    --filter-strength: 0;
 
 }
 .dark-theme{
@@ -54,8 +59,9 @@ html{
 
     --text: white;
     --swap-text: black;
-    --home-pad: 18.5%;
+    --home-pad: 10%;
     --img-size: 500px;
+    --filter-strength: 1;
 }
 
 /*pop out nav bar//////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -103,7 +109,7 @@ html{
 }
 
 #navbar ul li a:hover {
-	color: #000000;
+	color: var(--text);
 	transition: 0.5s;
 }
 
@@ -115,7 +121,7 @@ html{
 #navbar ul li a::after {
     display:block;
     content: '';
-    border-bottom: solid 3px #000000;  
+    border-bottom: solid 3px var(--text);;  
     transform: scaleX(0);  
     transition: 350ms ease-in-out;
     transform-origin: 0% 50%;
@@ -126,6 +132,7 @@ html{
     padding-inline: 30px;
     width: 30px;
     cursor: pointer;
+    filter: invert(var(--filter-strength))
 }
 
 #navbar #icon2{
@@ -133,6 +140,7 @@ html{
     padding-inline: 30px;
     width: 30px;
     cursor: pointer;
+    filter: invert(var(--filter-strength))
 }
 
 /*nav bar//////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -168,7 +176,7 @@ nav ul li a:first-child {
 }
 
 nav ul li a:hover {
-	color: #000000;
+	color: var(--text);;
 	transition: 0.5s;
 }
 
@@ -180,7 +188,7 @@ nav ul li a:hover:after {
 nav ul li a::after {
     display:block;
     content: '';
-    border-bottom: solid 3px #000000;  
+    border-bottom: solid 3px var(--text);;  
     transform: scaleX(0);  
     transition: 350ms ease-in-out;
     transform-origin: 0% 50%;
@@ -294,8 +302,8 @@ nav ul{
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
+    border-bottom: 5px solid var(--text);
+    border-right: 5px solid var(--text);
     margin: -10px;
     animation: scroll 2s infinite;
 }
@@ -439,36 +447,89 @@ nav ul{
 }
 
 /*education section//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.education-section{
+.education-section {
     padding-top: 5%;
-    min-height: 120vh;
-    background-color: var(--tertiary-color);
-}
-.education-section h1{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 0.4rem;
-    font-size: 46px;
-    color: #000000;
-    font-family: Mustica;
-}
-.education{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 100vh;
+    background-color: #363636;
+    color: #ffffff;
 }
 
-.uni{
-    justify-content: center;
-    align-content: flex-start;
-    padding-top: 40px;
-    display: flex;
+.education-section h1 {
+    text-align: center;
+    padding-top: 0.4rem;
+    font-size: 46px;
+    font-family: Mustica;
+    margin-bottom: 30px;
 }
-.uoftcoat{
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.uni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.uoftcoat {
     width: 150px;
     height: auto;
+    margin-right: 20px;
 }
+
+.uni-info {
+    text-align: left;
+}
+
+.uni-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.uni-info p {
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+.education h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.course-column {
+    width: 48%;
+}
+
+.course-column h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4e9fca;
+}
+
+.courses ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.courses li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #d0d0d0;
+}
+
 .textgrad{
     background-image: linear-gradient(to left, #2e9fb8, #2063c6, #586cd0, #2e9fb8);
     background-size: 100%;
@@ -503,34 +564,44 @@ nav ul{
     font-size: large;
 }
 
-.courses{
+.courses {
     justify-content: center;
     align-content: flex-start;
     padding-top: 80px;
     display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
-.courses h2{
+
+.course-column {
+    flex: 1;
+}
+
+.courses h2 {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
-.courses ul{
+.courses ul {
     display: inline-block;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
+    justify-content: flex-start;
     list-style: square;
-    padding-left: 0;
-}
-.firstyr{
-    font-size: larger;
+    padding-left: 20px;
 }
 
-.courses li{
+.firstyr, .secondyr {
+    font-size: larger;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.courses li {
     font-family: Mustica;
     font-weight: bolder;
-    margin: 20px;
-    font-size: 20px;
+    margin: 10px 0;
+    font-size: 18px;
 }
 
 .edu-uni{
@@ -559,12 +630,24 @@ nav ul{
 
 /*card*/
 
-.container{
+.container .firstrow{
     padding-top: 10px;
     position: relative;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+
+.container .secondrow{
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#quantile{
+    max-width: 150px;
 }
 
 .container .card{
@@ -589,6 +672,13 @@ nav ul{
     transform: translateY(100px);
 }
 
+.container .card .face.face1 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .container .card:hover .face.face1{
     background: var(--card);
     transform: translateY(0);
@@ -605,9 +695,6 @@ nav ul{
 
 .container .card .face.face1 .content img{
     max-width: 100px;
-    display: flex;
-    justify-content: center;
-    padding-left: 23%;
 }
 
 .container .card .face.face1 .content h3{

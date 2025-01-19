@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/behelit.png.png" id="icon">
     <title>Baqer Farhan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -55,7 +56,7 @@
                          <div class="text">
                              <h1><span color="red">Baqer</span><br>Farhan</h1>
                              <p>I like to code</p>
-                             <br><br><a href="resume/Resume for Baqer Farhan.pdf">CV</a>
+                             <br><br><a href="resume/latexresume.pdf">CV</a>
                          </div>
                          <img src="images/output-onlinepngtools.png" alt="Guts From Berserk" id="guts"/>
                      </div>
@@ -228,32 +229,44 @@
         <!--education-section-->
         <div id="my-education">
             <section class="education-section">
-                    <h1>EDUCATION</h1>
-                    <div class="education">
-                        <!--University-->
-                        <div class="uni">
-                            <img src="images/U-of-T-coat.png" alt="Uoft Coat of Arms" class="uoftcoat"/>
-                            <p class="main-edu-uni textgrad">
-                                University of Toronto<br>Scarborough<br>
-                                <span>Student in first year<br> Projected Graduation: June 2027</span>
-                            </p>
+                <h1>EDUCATION</h1>
+                <div class="education">
+                    <div class="uni">
+                        <img src="images/U-of-T-coat.png" alt="Uoft Coat of Arms" class="uoftcoat"/>
+                        <div class="uni-info">
+                            <h2 class="textgrad">University of Toronto<br>Scarborough</h2>
+                            <p>Student in second year<br>Projected Graduation: June 2027</p>
                         </div>
-                        <div class="courses">
-                                <div>
-                                    <h2>Relevant Courses:</h2>    
-                                    <ul>
-                                        <span class="firstyr textgradinv">First Year:</span>
-                                        <li>CSCA08H3 Introduction to Computer Science I</li>
-                                        <li>CSCA67H3 Discrete Mathematics</li>
-                                        <li>FSTA01H3 Foods That Changed the World</li>
-                                        <li>LINA01H3 Introduction to Linguistics</li>
-                                        <li>MATA31H3 Calculus I for Mathematical Sciences</li>
-                                        <li>CSCA48H3 Introduction to Computer Science II</li>
-                                        <li>MATA22H3 Linear Algebra I for Mathematical Sciences</li>
-                                        <li>MATA37H3 Calculus II for Mathematical Sciences</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    </div>
+                    <h3>Relevant Courses:</h3>
+                    <div class="courses">
+                        <div class="course-column">
+                            <h4 class="textgradinv">First Year:</h4>
+                            <ul>
+                                <li>CSCA08H3 Introduction to Computer Science I</li>
+                                <li>CSCA67H3 Discrete Mathematics</li>
+                                <li>FSTA01H3 Foods That Changed the World</li>
+                                <li>LINA01H3 Introduction to Linguistics</li>
+                                <li>MATA31H3 Calculus I for Mathematical Sciences</li>
+                                <li>CSCA48H3 Introduction to Computer Science II</li>
+                                <li>MATA22H3 Linear Algebra I for Mathematical Sciences</li>
+                                <li>MATA37H3 Calculus II for Mathematical Sciences</li>
+                            </ul>
+                        </div>
+                        <div class="course-column">
+                            <h4 class="textgradinv">Second Year:</h4>
+                            <ul>
+                                <li>MATB24H3 Linear Algebra II</li>
+                                <li>MATB41H3 Techniques of the Calculus of Several Variables I</li>
+                                <li>MATB42H3 Techniques of the Calculus of Several Variables II</li>
+                                <li>MATB44H3 Differential Equations I</li>
+                                <li>MATC46H3 Differential Equations II</li>
+                                <li>STAB52H3 Introduction to Probability</li>
+                                <li>STAB57H3 Introduction to Statistics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
             <!--projects section-->
@@ -262,52 +275,79 @@
                  <h1>PROJECTS</h1>
                  <div class="projects">
                     <div class="container">
-                        <div class="card">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="images/code icon.png">
-                                    <h3>Personal Website</h3>
+                        <div class="firstrow">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="images/code icon.png">
+                                        <h3>Personal Website</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>In case you couldn't tell, you're looking at my personal website right now!
+                                            This website was made entirely with HTML, CSS, and a bit of JavaScript.
+                                        </p>
+                                            <a href="https://github.com/baqrfrhn/Personal-Website">Repository</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>In case you couldn't tell, you're looking at my personal website right now!
-                                        This website was made entirely with HTML, CSS, and a bit of JavaScript.
-                                    </p>
-                                        <a href="https://github.com/baqrfrhn/Personal-Website">Repository</a>
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="images/matrix.png">
+                                        <h3>Matrix Multi-Purpose Calculator</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>
+                                            A web-based tool that lets users perform essential matrix operations, including 
+                                            addition, multiplication, and finding inverses or determinants. 
+                                            Designed for quick and accurate computations. 
+                                            <br>
+                                        </p>
+                                            <a href="https://github.com/baqrfrhn/Matrix-Calculator">Repository</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="images/neural.png">
+                                        <h3>NCF Movie <br> Recommender</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>
+                                            A personalized movie recommendation system leveraging neural collaborative filtering (NCF)
+                                            to predict user preferences and generate diverse, tailored recommendations. 
+                                            Supports interactive searches and dynamic suggestions.
+                                        </p>
+                                            <a href="https://github.com/baqrfrhn/movie-recommender">Repository</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="images/enigma machine.png">
-                                    <h3>Enigma Machine</h3>
+                        <div class="secondrow">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <img src="images/quantile.png"  id="quantile">
+                                        <h3>S&P-500 Prediction System</h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>
-                                        Created program using Java that encrypts and decrypts
-                                        messages in a similar fashion as the Enigma Machine (commonly 
-                                        used encryption device for the German army during WWII). 
-                                        <br>
-                                    </p>
-                                        <a href="https://github.com/baqrfrhn/Enigma-Cipher">Repository</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="">
-                                    <h3>Undertermined</h3>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p></p>
-                                        <a href="#">Repository</a>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>
+                                            A robust quantile regression system designed to predict multi-day market returns with 
+                                            high confidence intervals.Features extensive market data analysis, technical indicators, 
+                                            and asset correlation insights to generate actionable predictions and dynamic market 
+                                            regime visualizations..
+                                        </p>
+                                            <a href="https://github.com/baqrfrhn/quantile-regressor">Repository</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
